@@ -1,0 +1,60 @@
+/* Custom scrollbar for the entire website */
+html, body {
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #2C3E50;
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  width: 5px;
+}
+
+html::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+  background-color: #2C3E50;
+}
+
+html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+  background-color: #4A90E2;
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:hover, body::-webkit-scrollbar-thumb:hover {
+  background-color: #357ABD;
+}
+
+.box{
+  background-color: #111827;
+}
+
+.scrollable-div {
+  width: 760px; /* Adjust as needed */
+  height: 570px; /* Set a fixed height */
+  overflow-y: auto; /* Enables vertical scrolling */
+  overflow-x: hidden; /* Hides horizontal scroll */
+  border: 5px dashed rgb(254, 254, 254); /* Optional border for visibility */
+  padding: 10px;
+  background-color: #6390a5;
+  border-radius: 10px;
+  /* Hide default scrollbar for all browsers */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #134855 #f1f1f1; /* Scrollbar color */
+}
+
+/* Custom scrollbar for WebKit browsers (Chrome, Edge, Safari) */
+.scrollable-div::-webkit-scrollbar {
+  width: 20px; /* Scrollbar width */
+}
+
+.scrollable-div::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+  border-radius: 50px; /* Rounded track */
+}
+
+.scrollable-div::-webkit-scrollbar-thumb {
+  background: #000000; /* Scrollbar color */
+  border-radius: 50px; /* Rounded scrollbar */
+}
+
+.scrollable-div::-webkit-scrollbar-thumb:active {
+  background: #555353; /* Darker color on hover */
+}
